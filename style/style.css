@@ -1,0 +1,13 @@
+.btn {
+    font-size: 50px;
+}
+
+.calc {
+    margin: auto;
+}
+
+#output {
+    border: 2px solid black;
+    min-height: 80px;
+    min-width: fit-content;
+}
