@@ -13,39 +13,44 @@
 </head>
 
 <body>
-
-    <div class="card mx-auto w-50">
-        <div class="container">
-                    <div id="output" class="fs-1 h-25 p-2"></div>
+    
+    <div class="container">
+            <div class="card mx-auto bg-dark">
+                    <div id="output" class="h-25 p-2"></div>
                     <div class="row">
                         <div class="calc my-2">
+                            <div class="col d-flex justify-content-between align-content-between">
+                                <button class="btn rounded-pill border-3 border-warning bg-dark " onclick="clearSum()">Clear</button>
+                                <button class="btn rounded-pill border-3 border-warning bg-dark" onclick="deleteChar()">Delete</button>
+                            </div>
+
                             <div class="col">
                                 <button class="btn rounded-circle border-1 border-primary my-2" onclick="addToSum('7')">7</button>
                                 <button class="btn rounded-circle border-1 border-primary my-2" onclick="addToSum('8')">8</button>
                                 <button class="btn rounded-circle border-1 border-primary my-2" onclick="addToSum('9')">9</button>
-                                <button class="btn rounded-circle border-1 border-dark my-2" onclick="addToSum('+')">+</button>
+                                <button class="btn rounded-circle border-3 border-warning my-2" onclick="addToSum('+')">+</button>
                             </div>
                             
                             <button class="btn rounded-circle border-1 border-primary my-2" onclick="addToSum('4')">4</button>
                             <button class="btn rounded-circle border-1 border-primary my-2" onclick="addToSum('5')">5</button>
                             <button class="btn rounded-circle border-1 border-primary my-2" onclick="addToSum('6')">6</button>
-                            <button class="btn rounded-circle border-1 border-dark my-2" onclick="addToSum('-')">-</button>
+                            <button class="btn rounded-circle border-3 border-warning my-2" onclick="addToSum('-')">-</button>
 
                             <div class="col">
                                 <button class="btn rounded-circle border-1 border-primary my-2" onclick="addToSum('1')">1</button>
                                 <button class="btn rounded-circle border-1 border-primary my-2" onclick="addToSum('2')">2</button>
                                 <button class="btn rounded-circle border-1 border-primary my-2" onclick="addToSum('3')">3</button>
-                                <button class="btn rounded-circle border-1 border-dark my-2" onclick="addToSum('*')">*</button>
+                                <button class="btn rounded-circle border-3 border-warning my-2" onclick="addToSum('*')">*</button>
                             </div>
 
+                            <button class="btn rounded-circle border-3 border-warning my-2" onclick="addToSum('.')">.</button>
                             <button class="btn rounded-circle border-1 border-primary my-2" onclick="addToSum('0')">0</button>
-                            <button class="btn rounded-circle border-1 border-primary my-2" onclick="addToSum('.')">.</button>
-                            <button class="btn rounded-circle border-1 border-primary my-2" onclick="addToSum('/')">/</button>
-                            <button class="btn rounded-circle border-1 border-dark my-2" onclick="evaluateSum()">=</button>
+                            <button class="btn rounded-circle border-3 border-warning my-2" onclick="addToSum('/')">/</button>
+                            <button class="btn rounded-circle border-3 border-warning my-2" onclick="evaluateSum()">=</button>
                         </div>
+
+                        
                     </div>
-                    <button class="btn-clear" onclick="clearSum()">Clear</button>
-                    <button class="btn-clear" onclick="deleteChar()">Delete</button>
                 </div>
             </div>
 

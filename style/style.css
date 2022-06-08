@@ -1,5 +1,18 @@
+.card{
+width: fit-content;
+padding: 20px;
+margin-top: 50px;
+}
+
 .btn {
-    font-size: 50px;
+    font-size: 30px;
+    min-height: 70px;
+    min-width: 70px;
+    color: white;
+}
+
+.btn:hover{
+    color: #e9b20a;
 }
 
 .calc {
@@ -7,7 +20,10 @@
 }
 
 #output {
+    font-size: 50px;
+    background-color: blanchedalmond;
+    color: black;
     border: 2px solid black;
-    min-height: 80px;
+    min-height: 100px;
     min-width: fit-content;
 }
